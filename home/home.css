@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 5px solid brown;
+}
+
+#header {
+    border: 5px solid purple;
+}
+
+#page {
+    border: 5px solid red;
+    background-color: #1455fb;
+    padding: 0 100px;
+    /* media queries */
+}
+
+#page-wrapper {
+    border: 5px solid orange;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    border: 5px solid yellow;
+}
+
+.image {
+    border: 5px solid green;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+}
+
+.controls {
+    border: 5px solid blue;
+}
+
+#blurb {
+    border: 5px solid magenta;
+}
+
+#footer {
+    border: 5px solid pink;
+    background: #1455fb;
+}
+
+#footer-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-column {
+    width: 33%;
+    text-align: center;
+    font-family: sans;
+}
+
+#page-wrapper>* {
+    width: 100%;
+}
