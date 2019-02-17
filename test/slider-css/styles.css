@@ -1,0 +1,622 @@
+/* Slider CSS - Supports up to five images */
+
+/* Animations */
+
+.slider .control-operator:target~.controls .control-button {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.slider .control-button:first-of-type, .slider .control-operator:nth-of-type(1):target~.controls .control-button:nth-of-type(1), .slider .control-operator:nth-of-type(2):target~.controls .control-button:nth-of-type(2), .slider .control-operator:nth-of-type(3):target~.controls .control-button:nth-of-type(3), .slider .control-operator:nth-of-type(4):target~.controls .control-button:nth-of-type(4), .slider .control-operator:nth-of-type(5):target~.controls .control-button:nth-of-type(5) {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.slider .image:first-of-type {
+    position: static;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.slider .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.slider .control-operator {
+    display: none;
+}
+
+.slider .control-operator:target~.image {
+    pointer-events: none;
+    opacity: 0;
+    -webkit-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+
+.slider .control-operator:target~.controls .control-button {
+    -webkit-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+
+/* Begin animations for amount-2 */
+@-webkit-keyframes controlAnimation-2 {
+    0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    14.5%, 50% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    64.3%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@-o-keyframes controlAnimation-2 {
+    0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    14.5%, 50% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    64.3%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@keyframes controlAnimation-2 {
+    0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    14.5%, 50% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    64.3%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@-webkit-keyframes sliderAnimation-2 {
+    0% {
+        opacity: 0;
+    }
+    14.3%, 50% {
+        opacity: 1;
+    }
+    64.3%, 100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes sliderAnimation-2 {
+    0% {
+        opacity: 0;
+    }
+    14.3%, 50% {
+        opacity: 1;
+    }
+    64.3%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sliderAnimation-2 {
+    0% {
+        opacity: 0;
+    }
+    14.3%, 50% {
+        opacity: 1;
+    }
+    64.3%, 100% {
+        opacity: 0;
+    }
+}
+
+.slider .control-operator:nth-of-type(1):target~.image:nth-of-type(1) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.slider .control-operator:nth-of-type(2):target~.image:nth-of-type(2) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.amount-2.autoplay .control-button {
+    -webkit-animation: controlAnimation-2 14s infinite;
+    -o-animation: controlAnimation-2 14s infinite;
+    animation: controlAnimation-2 14s infinite;
+}
+
+.amount-2.autoplay .image {
+    -webkit-animation: sliderAnimation-2 14s infinite;
+    -o-animation: sliderAnimation-2 14s infinite;
+    animation: sliderAnimation-2 14s infinite;
+}
+
+.amount-2 .control-button:nth-of-type(1), .amount-2 .image:nth-of-type(1) {
+    -webkit-animation-delay: -2s;
+    -o-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.amount-2 .control-button:nth-of-type(2), .amount-2 .image:nth-of-type(2) {
+    -webkit-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+}
+/* End animations for amount-2 */
+
+/* Begin animations for amount-3 */
+@-webkit-keyframes controlAnimation-3 {
+    0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    9.5%, 33.3% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    42.9%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@-o-keyframes controlAnimation-3 {
+    0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    9.5%, 33.3% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    42.9%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@keyframes controlAnimation-3 {
+    0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    9.5%, 33.3% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    42.9%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@-webkit-keyframes sliderAnimation-3 {
+    0% {
+        opacity: 0;
+    }
+    9.5%, 33.3% {
+        opacity: 1;
+    }
+    42.9%, 100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes sliderAnimation-3 {
+    0% {
+        opacity: 0;
+    }
+    9.5%, 33.3% {
+        opacity: 1;
+    }
+    42.9%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sliderAnimation-3 {
+    0% {
+        opacity: 0;
+    }
+    9.5%, 33.3% {
+        opacity: 1;
+    }
+    42.9%, 100% {
+        opacity: 0;
+    }
+}
+
+.slider .control-operator:nth-of-type(1):target~.image:nth-of-type(1) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.slider .control-operator:nth-of-type(2):target~.image:nth-of-type(2) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.slider .control-operator:nth-of-type(3):target~.image:nth-of-type(3) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.amount-3.autoplay .control-button {
+    -webkit-animation: controlAnimation-3 21s infinite;
+    -o-animation: controlAnimation-3 21s infinite;
+    animation: controlAnimation-3 21s infinite;
+}
+
+.amount-3.autoplay .image {
+    -webkit-animation: sliderAnimation-3 21s infinite;
+    -o-animation: sliderAnimation-3 21s infinite;
+    animation: sliderAnimation-3 21s infinite;
+}
+
+.amount-3 .control-button:nth-of-type(1), .amount-3 .image:nth-of-type(1) {
+    -webkit-animation-delay: -2s;
+    -o-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.amount-3 .control-button:nth-of-type(2), .amount-3 .image:nth-of-type(2) {
+    -webkit-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.amount-3 .control-button:nth-of-type(3), .amount-3 .image:nth-of-type(3) {
+    -webkit-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    animation-delay: 12s;
+}
+/* End animations for amount-3 */
+
+/* Begin animations for amount-4 */
+@-webkit-keyframes controlAnimation-4 {
+    0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    7.1%, 25% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    32.1%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@-o-keyframes controlAnimation-4 {
+    0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    7.1%, 25% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    32.1%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@keyframes controlAnimation-4 {
+    0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    7.1%, 25% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    32.1%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@-webkit-keyframes sliderAnimation-4 {
+    0% {
+        opacity: 0;
+    }
+    7.1%, 25% {
+        opacity: 1;
+    }
+    32.1%, 100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes sliderAnimation-4 {
+    0% {
+        opacity: 0;
+    }
+    7.1%, 25% {
+        opacity: 1;
+    }
+    32.1%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sliderAnimation-4 {
+    0% {
+        opacity: 0;
+    }
+    7.1%, 25% {
+        opacity: 1;
+    }
+    32.1%, 100% {
+        opacity: 0;
+    }
+}
+
+.slider .control-operator:nth-of-type(1):target~.image:nth-of-type(1) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.slider .control-operator:nth-of-type(2):target~.image:nth-of-type(2) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.slider .control-operator:nth-of-type(3):target~.image:nth-of-type(3) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.slider .control-operator:nth-of-type(4):target~.image:nth-of-type(4) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.amount-4.autoplay .control-button {
+    -webkit-animation: controlAnimation-4 28s infinite;
+    -o-animation: controlAnimation-4 28s infinite;
+    animation: controlAnimation-4 28s infinite;
+}
+
+.amount-4.autoplay .image {
+    -webkit-animation: sliderAnimation-4 28s infinite;
+    -o-animation: sliderAnimation-4 28s infinite;
+    animation: sliderAnimation-4 28s infinite;
+}
+
+.amount-4 .control-button:nth-of-type(1), .amount-4 .image:nth-of-type(1) {
+    -webkit-animation-delay: -2s;
+    -o-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.amount-4 .control-button:nth-of-type(2), .amount-4 .image:nth-of-type(2) {
+    -webkit-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.amount-4 .control-button:nth-of-type(3), .amount-4 .image:nth-of-type(3) {
+    -webkit-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    animation-delay: 12s;
+}
+
+.amount-4 .control-button:nth-of-type(4), .amount-4 .image:nth-of-type(4) {
+    -webkit-animation-delay: 19s;
+    -o-animation-delay: 19s;
+    animation-delay: 19s;
+}
+/* End animations for amount-4 */
+
+/* Begin animations for amount-5 */
+@-webkit-keyframes controlAnimation-5 {
+    0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    5.7%, 20% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    25.7%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@-o-keyframes controlAnimation-5 {
+    0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    5.7%, 20% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    25.7%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@keyframes controlAnimation-5 {
+    0% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    5.7%, 20% {
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    25.7%, 100% {
+        color: #ccc;
+        color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+@-webkit-keyframes sliderAnimation-5 {
+    0% {
+        opacity: 0;
+    }
+    5.7%, 20% {
+        opacity: 1;
+    }
+    25.7%, 100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes sliderAnimation-5 {
+    0% {
+        opacity: 0;
+    }
+    5.7%, 20% {
+        opacity: 1;
+    }
+    25.7%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sliderAnimation-5 {
+    0% {
+        opacity: 0;
+    }
+    5.7%, 20% {
+        opacity: 1;
+    }
+    25.7%, 100% {
+        opacity: 0;
+    }
+}
+
+.slider .control-operator:nth-of-type(1):target~.image:nth-of-type(1) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.slider .control-operator:nth-of-type(2):target~.image:nth-of-type(2) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.slider .control-operator:nth-of-type(3):target~.image:nth-of-type(3) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.slider .control-operator:nth-of-type(4):target~.image:nth-of-type(4) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.slider .control-operator:nth-of-type(5):target~.image:nth-of-type(5) {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.amount-5.autoplay .control-button {
+    -webkit-animation: controlAnimation-5 35s infinite;
+    -o-animation: controlAnimation-5 35s infinite;
+    animation: controlAnimation-5 35s infinite;
+}
+
+.amount-5.autoplay .image {
+    -webkit-animation: sliderAnimation-5 35s infinite;
+    -o-animation: sliderAnimation-5 35s infinite;
+    animation: sliderAnimation-5 35s infinite;
+}
+
+.amount-5 .control-button:nth-of-type(1), .amount-5 .image:nth-of-type(1) {
+    -webkit-animation-delay: -2s;
+    -o-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.amount-5 .control-button:nth-of-type(2), .amount-5 .image:nth-of-type(2) {
+    -webkit-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.amount-5 .control-button:nth-of-type(3), .amount-5 .image:nth-of-type(3) {
+    -webkit-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    animation-delay: 12s;
+}
+
+.amount-5 .control-button:nth-of-type(4), .amount-5 .image:nth-of-type(4) {
+    -webkit-animation-delay: 19s;
+    -o-animation-delay: 19s;
+    animation-delay: 19s;
+}
+
+.amount-5 .control-button:nth-of-type(5), .amount-5 .image:nth-of-type(5) {
+    -webkit-animation-delay: 26s;
+    -o-animation-delay: 26s;
+    animation-delay: 26s;
+}
+/* End animations for amount-5 */
+
+.slider .control-button {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.slider .control-button:hover {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* RIGHT HERE */
+.slider {
+    position: relative;
+    width: 1400px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    background: #1455fb;
+}
+
+.slider .controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.slider .control-button {
+    display: inline-block;
+    margin: 0 .02em;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: color .1s;
+    -o-transition: color .1s;
+    transition: color .1s;
+}
